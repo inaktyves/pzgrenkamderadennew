@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fotogalerie – Kameradentag 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hdr">
+    <div class="hdr-inner">
+      <a href="https://pzgrenkameraden.ch" class="hdr-logo">Kameradentag 2026</a>
+      <nav class="hdr-nav">
+        <a href="https://pzgrenkameraden.ch/programm/">Programm</a>
+        <a href="https://pzgrenkameraden.ch/anmeldung/">Anmeldung</a>
+        <a href="https://pzgrenkameraden.ch/truppengattung/">Truppengattung</a>
+        <a href="https://pzgrenkameraden.ch/sponsoren/">Sponsoren</a>
+        <a href="https://pzgrenkameraden.ch/organisationskommitee/">OK / Schirmherr</a>
+        <a href="#" class="active">Fotogalerie</a>
+        <a class="hdr-btn" href="https://pzgrenkameraden.ch/wp-content/uploads/2026/02/Pz_Gren_Kameradentag_14082026_Flyer.pdf">Flyer 🇨🇭</a>
+        <a class="hdr-btn" href="https://pzgrenkameraden.ch/wp-content/uploads/2026/02/PzGren-Kameradentag-1-Pager-FR.pdf">Flyer 🇫🇷</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <div class="ptitle">
+    <h1>Fotogalerie</h1>
+    <p>Eindrücke vom Kameradentag der Panzergrenadiere – Waffenplatz Thun, 14. August 2026</p>
+  </div>
+
+  <!-- GALLERY -->
+  <main class="gallery">
+    <div class="grid">
+
+      <div class="item wide" onclick="openlb(this)">
+        <img src="images/img1.jpg" alt="Pz 87 Leopard – Schussabgabe" loading="lazy">
+        <div class="cap">Pz 87 Leopard – Schussabgabe</div>
+      </div>
+
+      <div class="item" onclick="openlb(this)">
+        <img src="images/img5.jpg" alt="Leopard 2 – Waffenplatz Thun" loading="lazy">
+        <div class="cap">Leopard 2 – Waffenplatz Thun</div>
+      </div>
+
+      <div class="item" onclick="openlb(this)">
+        <img src="images/img4.jpg" alt="Panzergrenadiere im Einsatz" loading="lazy">
+        <div class="cap">Panzergrenadiere im Einsatz</div>
+      </div>
+
+      <div class="item" onclick="openlb(this)">
+        <img src="images/img2.jpg" alt="Schützenpanzer – Geländefahrt" loading="lazy">
+        <div class="cap">Schützenpanzer – Geländefahrt</div>
+      </div>
+
+      <div class="item wide" onclick="openlb(this)">
+        <img src="images/img3.jpg" alt="SPz – 75 Jahre Panzergrenadiere" loading="lazy">
+        <div class="cap">SPz – 75 Jahre Panzergrenadiere</div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lb" id="lb" onclick="closelb()">
+    <button class="lb-x" onclick="closelb()">×</button>
+    <img id="lb-img" src="" alt="">
+    <div class="lb-cap" id="lb-cap"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="ftr">
+    <div class="ftr-grid">
+
+      <div class="ftr-col">
+        <div class="ftr-head">Wir freuen uns<br>auf Dich!</div>
+        <div class="ftr-contact">
+          <strong>Olivier Laube</strong><br>
+          <a href="mailto:olaube@gmail.com">olaube@gmail.com</a><br>
+          Tel. +41 79 577 78 05
+        </div>
+        <div class="ftr-social">
+          <a href="https://www.instagram.com/pzgrenkameraden/" target="_blank" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/pzgrenkameraden/" target="_blank" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="ftr-col">
+        <nav class="ftr-nav">
+          <a href="https://pzgrenkameraden.ch/programm/">Programm</a>
+          <a href="https://pzgrenkameraden.ch/anmeldung/">Anmeldung</a>
+          <a href="https://pzgrenkameraden.ch/truppengattung/">Truppengattung</a>
+          <a href="https://pzgrenkameraden.ch/sponsoren/">Sponsoren</a>
+          <a href="https://pzgrenkameraden.ch/organisationskommitee/">OK / Schirmherr</a>
+          <a href="https://pzgrenkameraden.ch/buchtipp-einladung-zur-buchvernissage/">Buchtipp</a>
+        </nav>
+      </div>
+
+      <div class="ftr-col">
+        <a href="https://www.armeesiech-shop.ch/pzgrenkameradentag" class="ftr-cta" target="_blank">
+          Kameradentag-Shirt<br>bestellen
+        </a>
+      </div>
+
+      <div class="ftr-col">
+        <a href="https://www.armee.ch/de" target="_blank">
+          <img class="ftr-army-logo" src="images/logo.png" alt="Schweizer Armee">
+        </a>
+      </div>
+
+    </div>
+
+    <div class="ftr-bottom">
+      <a href="https://pzgrenkameraden.ch/impressum/">Impressum, Datenschutzerklärung, Haftungsausschluss, Photo- und Videorechte</a>
+      &nbsp;·&nbsp; © 2026 Pz Gren Kameradentag
+    </div>
+  </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
